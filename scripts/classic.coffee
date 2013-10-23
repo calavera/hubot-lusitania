@@ -25,4 +25,4 @@ fetchTweet = (msg, person) ->
 
 module.exports = (robot) ->
   robot.respond /classic @?(\w+)/i, (msg) ->
-    fetchTweet(msg, msg.match[2])
+    fetchTweet(msg, msg.match[1])
