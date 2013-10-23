@@ -1,3 +1,15 @@
+# Description:
+#   Shit you say on the internet
+#
+# Dependencies:
+#   None
+#
+# Configuration:
+#   None
+#
+# Commands:
+#   hubot classic - get a classic tweet
+
 fetchTweet = (msg, person) ->
   msg.http("http://favstar.fm/users/#{person}")
     .get() (err, res, body) ->
